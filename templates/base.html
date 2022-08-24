@@ -4,7 +4,7 @@
 <html class="h-100">
 
 <head>
-    <title>CodeStar Blog</title>
+    <title>Clean and Lean Blog</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -57,12 +57,31 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
-
+    <script>
+       setTimeout(function() {
+            let messages = document.getElementById('msg');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+       }, 3000);
+    </script>
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">The Clean and Lean</p>
