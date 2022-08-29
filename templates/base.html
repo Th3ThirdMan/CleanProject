@@ -26,8 +26,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom py-4">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="{% url 'home' %}"><span class="brand">C<span class="red-o">l</span>ean<span
-                        class="thin">|and Lean</span></span></span></a>
+            <a class="navbar-brand text-white" href="{% url 'home' %}"><span class="brand">C<span class="letter">l</span>ean<span
+                        class="thin">|and L<span class="letter">e</span>an</span></span></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,12 +35,16 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Recipes</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{% url 'account_logout' %}">Logout</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hi {{ user.username }}
+                        </a>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{% url 'account_signup' %}">Register</a>
@@ -50,14 +54,15 @@
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
-                    A Healthy Option
+                <span class="navbar-text text-white">
+                    The Healthy Option
                 </span>
             </div>
         </div>
     </nav>
 
     <div class="container">
+        
         <div class="row">
             <div class="col-md-12 offset-md-2">
                 {% for message in messages %}
@@ -86,32 +91,21 @@
     <footer class="bg-dark text-center text-white mt-auto">
         <div class="container p-4 pb-0">
 
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i
-            ></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i
-            ></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i
-            ></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa-brands fa-instagram"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i
-            ></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i
-            ></a>
-            </section>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com/" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" target="_blank" role="button"><i class="fab fa-google"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank" role="button"><i class="fa-brands fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/" target="_blank" role="button"><i class="fab fa-github"></i></a>
+    </section>
         </div>
 
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2020 Copyright:
             <a class="text-white" href="https://mdbootstrap.com/">thecleanandlean.com</a>
         </div>
-        <!-- Copyright -->
-        <!-- <p class="m-0 text-center text-white">The Clean and Lean</p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i></p> -->
     </footer>
 </body>
 

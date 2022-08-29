@@ -2,46 +2,68 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid clean-image" style="background-image:url('https://res.cloudinary.com/dj7stkdit/image/upload/v1661472505/samples/food/french-food_f1adk6.jpg');">
     <div class="row">
+        <div class="col col-title text-center">
+            <h1 class="text-center title">Clean and Lean Recipes</h1>
+            <p class="display-5">Sign up today to post your recipe ideas</p>
+            <hr>
+            {% if user.is_authenticated %}
+            <a href="{% url 'account_logout' %}">
+                <button class="btn btn-warning">Logout</button>
+            </a>
 
-        <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
-            <div class="row">
-                {% for post in post_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
-                                    src="https://res.cloudinary.com/dj7stkdit/image/upload/v1660177625/cld-sample-4.jpg">
-                                {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
-                                {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div>
-                            </div>
-                            <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
-                            </a>
-                            <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                                {{ post.number_of_likes }}</p>
+            {% else %}
+            <a href="{% url 'account_login' %}"
+                 class="btn btn-warning btn-login-register">Register
+            </a>
+            {% endif %}
+    </div>
+    </div>
+</div>
+    <section>
+        <div class="text-center mt-5 mb-5">
+            <h3>Clean and Lean Recipes</h3>
+    </div>
+<div class="col-12 mt-3 left">
+    <div class="row">
+        {% for post in post_list %}
+        <div class="col-md-4">
+            <div class="card mb-4" style="width: 17rem;">
+                <div class="card-body">
+                    <div class="image-container">
+                        {% if "placeholder" in post.featured_image.url %}
+                        <img class="card-img-top"
+                            src="https://res.cloudinary.com/dj7stkdit/image/upload/v1660177625/cld-sample-4.jpg">
+                        {% else %}
+                        <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                        {% endif %}
+                        <div class="image-flash">
+                            <p class="author">Author: {{ post.author }}</p>
                         </div>
                     </div>
+                    <a href="{% url 'post_detail' post.slug  %}" class="post-link">
+                        <h2 class="card-title">{{ post.title }}</h2>
+                        <p class="card-text">{{ post.excerpt }}</p>
+                    </a>
+                    <hr />
+                    <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
+                        {{ post.number_of_likes }}</p>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
-            </div>
-            <div class="row">
-                {% endif %}
-                {% endfor %}
-
             </div>
         </div>
+        {% if forloop.counter|divisibleby:3 %}
     </div>
+    <div class="row">
+        {% endif %}
+        {% endfor %}
+
+    </div>
+</div>
+</div>
+
+</section>
+
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
