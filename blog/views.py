@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.utils.text import slugify
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, RecipeForm
 
 
 class PostList(generic.ListView):
@@ -76,6 +77,35 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class AddRecipe(View):
+    def get(self, request):
+        return render(
+            request, "add_recipe.html", {"recipe_form": RecipeForm()})
+
+    def post(self, request):
+        recipe_form = RecipeForm(request.POST, request.FILES)
+
+        if recipe_form.is_valid():
+            recipe = recipe_form.save(commit=False)
+            recipe.author = request.user
+            recipe.slug = slugify('-'.join([recipe.title,
+                                            str(recipe.author)]),
+                                  allow_unicode=False)
+            recipe.save()
+        else:
+            messages.error(self.request, 'Please complete all required fields')
+            recipe_form = RecipeForm()
+
+        return render(
+            request,
+            "add_recipe.html",
+            {
+                "recipe_form": recipe_form
+
+            },
+        )
 
 
 

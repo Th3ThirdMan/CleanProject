@@ -9,11 +9,7 @@ body {
     color: white;
 }
 
-.dropdown-menu{
-    background-color: rgb(187 187 187);
-}
-
-.col-title{
+.col-title {
     padding: 40px 15px;
     background-color: rgb(73 69 65 / 35%);
     border-radius: 5px;
@@ -146,17 +142,17 @@ p.display-5 {
 }
 
 .btn {
-    background-color: #E84610;
+    background-color: orange;
     color: #fff;
 }
 
 .btn:hover {
-    background-color: coral;
+    background-color: rgb(250, 204, 120);
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #E84610;
+    background-color: orange;
 }
 
 .link {
@@ -185,5 +181,5 @@ p.display-5 {
 
 .btn-info {
     color: white;
-    background-color: #E84610;
+    background-color: orange;
 }

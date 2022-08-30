@@ -12,11 +12,11 @@
             <a href="{% url 'account_logout' %}">
                 <button class="btn btn-warning">Logout</button>
             </a>
-
             {% else %}
-            <a href="{% url 'account_login' %}"
-                 class="btn btn-warning btn-login-register">Register
+            <a href="{% url 'account_signup' %}"
+                class="btn btn-warning btn-login-register">Register
             </a>
+            
             {% endif %}
     </div>
     </div>
