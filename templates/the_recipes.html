@@ -10,19 +10,15 @@
 
 {% if user.is_authenticated %}
 
-<!-- Title -->
 
 <div class="container">
     <div class="row">
         <div class="col-12 text-center mt-5">
-            <h2>Please add a new Recipe</h2>
+            <h2>The Recipes</h2>
             <hr>
         </div>
     </div>
 </div>
-
-
-<!-- Recipe Forms -->
 
 <div class="container">
     <div class="row">
@@ -30,7 +26,7 @@
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ recipe_form|crispy}}
-                <button class="btn btn-secondary right mb-2" type="submit" value="Save">Add a new Recipe</button>
+                <button class="btn btn-secondary right mb-2" type="submit" value="Save">The Recipes</button>
             </form>
         </div>
     </div>

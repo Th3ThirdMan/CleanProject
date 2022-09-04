@@ -46,13 +46,13 @@ p.display-5 {
 
 .card {
     margin: auto;
-    border:#284667;
-    background-color:#f5edea;
+    border:#cad9e9;
+    background-color:#f88a62;
     margin-bottom: 100px;
 }
 
 .card-text {
-    color: black;
+    color: rgb(27, 5, 135);
 }
 
 .card-title {
@@ -77,11 +77,11 @@ p.display-5 {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #3d6e96;
+    background-color: #c0dbf2;
 }
 
 .author {
-    background-color: #2d516e;
+    background-color: #d3e7f7;
     color: white;
     margin: 4px;
     font-size: 10px;
@@ -97,7 +97,7 @@ p.display-5 {
 }
 
 .masthead-text {
-    background-color: #7089a4;
+    background-color: #e6f0fa;
     color: black;
     position: relative;
 }
@@ -114,7 +114,7 @@ p.display-5 {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #bfd0e1;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -182,4 +182,8 @@ p.display-5 {
 .btn-info {
     color: white;
     background-color: orange;
+}
+
+.alert {
+    width: 60%;
 }

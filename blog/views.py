@@ -108,6 +108,18 @@ class AddRecipe(View):
         )
 
 
+class TheRecipes(generic.ListView):
+    
+    model = Post
+    queryset = Post.objects.order_by('-created_on')
+    template_name = 'the_recipes.html'
+    paginate_by = 6
+
+
+        
+
+
+
 
 
 
