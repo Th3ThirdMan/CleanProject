@@ -14,6 +14,7 @@ body {
     background-color: rgb(73 69 65 / 35%);
     border-radius: 5px;
     color: #efe5db;
+    font-family: Lato, sans-serif;
 }
 
 .title {
@@ -22,6 +23,11 @@ body {
 
 p.display-5 {
     font-size: 35px;
+}
+
+.recent-recipe {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
 }
 
 .letter {
@@ -46,17 +52,36 @@ p.display-5 {
 
 .card {
     margin: auto;
-    border:#cad9e9;
-    background-color:#f88a62;
+    border:#116dce;
+    background-color:#dbd5d4;
     margin-bottom: 100px;
 }
 
 .card-text {
-    color: rgb(27, 5, 135);
+    color: black;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+}
+
+.recipes-content {
+    font-family: Lato, sans-serif;
+    background-color: #f9f7f3;
+    color: white;
+}
+
+hr {
+    width: 100px;
+    height: 500px;
+    margin-left: 600px;
+    border-radius: 20px;
+    background-color: orange;
 }
 
 .card-title {
     color: black;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .clean-image{
@@ -77,14 +102,13 @@ p.display-5 {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #c0dbf2;
 }
 
 .author {
-    background-color: #d3e7f7;
+    background-color: #580404;
     color: white;
     margin: 4px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .masthead {
@@ -97,9 +121,11 @@ p.display-5 {
 }
 
 .masthead-text {
-    background-color: #e6f0fa;
+    background-color: #021d38;
     color: black;
     position: relative;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
 }
 
 .masthead-image {

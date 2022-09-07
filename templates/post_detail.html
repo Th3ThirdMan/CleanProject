@@ -17,9 +17,9 @@
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
-            </div>
+         </div>
         </div>
-    </div>
+   </div>
 </div>
 
 <div class="container">
@@ -58,10 +58,32 @@
                             {{ total_comments }}</strong>
                         {% endwith %}
                     </div>
-                </div>
+                <!-- </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+           <div class="col border-0 card mb-4 mt-3 recipes-content">
+              <div class="card-body px-0">
+                 <p>{{ post.title| striptags }}</p>
+                 <hr/>
+                 <h4>Description:</h4>
+                 <p class="card-text ">{{ post.description | safe }} </p>
+                 <hr/>
+                 <h4>Preparation:</h4>
+                 <p class="card-text ">{{ post.preparation | safe }}</p>
+                 <hr/>
+                 <h4>Ingredients:</h4>
+                 <p class="card-text ">{{ post.ingredients | safe }}</p>
+                 <hr/>
+              </div>
+           </div>
+        </div>
+     </div>
+
+
     <div class="row">
         <div class="col">
             <hr>
@@ -75,7 +97,7 @@
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
-                        <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
+                        <!-- The commenter's name goes here -->
                         {{ comment.name }}
                         <span class=" text-muted font-weight-normal">
                             <!-- The comment's created date goes here -->
