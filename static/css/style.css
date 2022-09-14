@@ -11,14 +11,23 @@ body {
 
 .col-title {
     padding: 40px 15px;
-    background-color: rgb(73 69 65 / 35%);
+    background-color: rgb(73 69 65 / 25%);
     border-radius: 5px;
-    color: #efe5db;
+    color: white;
     font-family: Lato, sans-serif;
 }
 
 .title {
     font-family: Lato, sans-serif;
+}
+
+.intro {
+    font-family: Lato, sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 40px 15px;
+    background-color: rgba(60, 80, 133, 0.25);
+    border-radius: 5px;
 }
 
 p.display-5 {
@@ -31,16 +40,16 @@ p.display-5 {
 }
 
 .letter {
-    color: #E84610;
+    color: orange;
 }
 
 .thin {
     font-weight: 300;
 }
 
-.light-bg {
+/* .light-bg {
     background-color: #fff;
-}
+} */
 
 .dark-bg {
     background-color: #445261;
@@ -52,7 +61,7 @@ p.display-5 {
 
 .card {
     margin: auto;
-    border:#116dce;
+    border:#15171a;
     background-color:#dbd5d4;
     margin-bottom: 100px;
 }
@@ -66,15 +75,17 @@ p.display-5 {
 .recipes-content {
     font-family: Lato, sans-serif;
     background-color: #f9f7f3;
-    color: white;
+    color: black;
 }
 
-hr {
-    width: 100px;
-    height: 500px;
-    margin-left: 600px;
-    border-radius: 20px;
-    background-color: orange;
+.signup {
+    background-color: rgba(60, 80, 133, 0.25);
+    padding: 25px 40px 40px 25px;
+}
+
+.login {
+        background-color: rgba(60, 80, 133, 0.25);
+        padding: 25px 40px 40px 25px;
 }
 
 .card-title {
@@ -82,6 +93,10 @@ hr {
     font-family: Lato, sans-serif;
     font-size: 16px;
     font-weight: 600;
+}
+
+.card-body h4 {
+    text-decoration: underline;
 }
 
 .clean-image{
@@ -122,7 +137,7 @@ hr {
 
 .masthead-text {
     background-color: #021d38;
-    color: black;
+    color: white;
     position: relative;
     font-family: Lato, sans-serif;
     font-size: 14px;
@@ -160,6 +175,7 @@ hr {
 .post-title {
     margin-top: 20%;
     margin-left: 5%;
+    color: white;
 }
 
 .post-subtitle {
