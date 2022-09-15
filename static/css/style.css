@@ -64,6 +64,10 @@ p.display-5 {
     font-family: Lato, sans-serif;
 }
 
+.card-body {
+    
+}
+
 .card-body h4 {
     text-decoration: underline;
 }
@@ -233,3 +237,4 @@ p.display-5 {
 .alert {
     width: 60%;
 }
+
