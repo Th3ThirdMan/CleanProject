@@ -14,7 +14,6 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -98,18 +97,10 @@ class AddRecipe(View):
             messages.error(self.request, 'Please complete all required fields')
             recipe_form = RecipeForm()
 
-        return render(
-            request,
-            "add_recipe.html",
-            {
-                "recipe_form": recipe_form
-
-            },
-        )
-
+        return HttpResponseRedirect(reverse('the_recipes'))
+        
 
 class TheRecipes(generic.ListView):
-    
     model = Post
     queryset = Post.objects.order_by('-created_on')
     template_name = 'the_recipes.html'

@@ -31,11 +31,10 @@
                 {{ recipe_form|crispy}}
                 {% csrf_token %}
                 <button class="btn btn-secondary right mb-2" type="submit" value="Save">Add a new Recipe</button>
-                <!-- <a href="{% url 'the_recipes' %}"  -->
             </form>
         </div>
     </div>
 </div>
- 
+
 {% endif %}
 {%endblock%}
