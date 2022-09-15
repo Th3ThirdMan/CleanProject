@@ -27,10 +27,11 @@
 <div class="container">
     <div class="row">
         <div class="col-10 mt-3 offset-1 g-0">
-            <form method="POST" enctype="multipart/form-data">
-                {% csrf_token %}
+            <form method="POST">
                 {{ recipe_form|crispy}}
+                {% csrf_token %}
                 <button class="btn btn-secondary right mb-2" type="submit" value="Save">Add a new Recipe</button>
+                <!-- <a href="{% url 'the_recipes' %}"  -->
             </form>
         </div>
     </div>
