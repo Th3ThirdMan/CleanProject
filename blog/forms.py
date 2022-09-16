@@ -21,9 +21,9 @@ class RecipeForm(forms.ModelForm):
         fields = ('title', 'description', 'ingredients', 'preparation')
 
         widgets = {
-            'description': SummernoteWidget(),
-            'ingredients': SummernoteWidget(),
-            'preparation': SummernoteWidget(),
+            'description': SummernoteWidget(attrs={'summernote': {'width': '430px', 'height': '450px'}}),
+            'ingredients': SummernoteWidget(attrs={'summernote': {'width': '430px', 'height': '450px'}}),
+            'preparation': SummernoteWidget(attrs={'summernote': {'width': '430px', 'height': '450px'}}),
         }
 
     def __init__(self, *args, **kwargs):
@@ -31,3 +31,4 @@ class RecipeForm(forms.ModelForm):
         self.fields[
             'title'
             ].label = ""
+
