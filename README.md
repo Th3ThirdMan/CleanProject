@@ -80,9 +80,9 @@ The Home page of the blog is the primary source that reflects a strong and appea
 
 * For the colour schema of the website I wanted to introduce a rich and rustic surround to the site. The landing page image was indicative of how I perceived the whole project concept, warm and inviting, to tie in accurately with the recipes offered in the site. 
 
-* As the website landing page image is a notable feature on first viewing it didn't need too much of a remove when deciding appropriate colours to co-incide with the visual of the website. Button colours and the Brand lettering worked well with rgb(255, 165, 0). For the card recipes this was offset subtly with rgb(251, 241, 222), giving not much in the way of a large remove on subsequent pages.
+* As the website landing page image is a notable feature on first viewing it didn't need too much of a remove when deciding appropriate colours to coincide with the visual aspects of the website. Button colours and the Brand lettering worked well with rgb(255, 165, 0). For the card recipes this was offset subtly with rgb(251, 241, 222), only a slight but noticeable remove on subsequent pages.
 
-* Hover options on buttons employed slight contrasts to original button colours.
+* Hover options on buttons employed short contrasts to original button colours.
 
 <br>
 
@@ -102,9 +102,11 @@ The Home page of the blog is the primary source that reflects a strong and appea
 
 <br>
 
-  * The Home Page consists of the Clean and Lean brand name logo 
+  * The Home Page consists of the Clean and Lean brand name logo. 
 
-  * An opacity element was integrated into the inner box feature allowing more transparency to view the background.
+  * Links to the Home Page and Login are present when the landing page is rendered. A Healthy Option link redirects to the home page. A centered button to register for the site is also present.
+
+  * The Home Page consists of the primary details and information on how to register to post up receipes.
 
   <br>
 
@@ -116,9 +118,13 @@ The Home page of the blog is the primary source that reflects a strong and appea
 
   <br>
 
-  * The Home Page consists of the primary details and information on how to register to post up receipes.
+  * The Login Page presents two extra navbar links, Recipes and Add Recipes.
 
-  * 
+  * Post registration this gives the user the option to view recipes already posted.
+
+  * Post registration this gives the user the option to make comments on recipes posted.
+
+  * Post registration this gives the user the option to like or unlike recipes.
 
   <br>
 
@@ -126,31 +132,54 @@ The Home page of the blog is the primary source that reflects a strong and appea
 
   <br>
 
-  ## The Recipes Page
+  ## The Recipe Pages
 
   <br>
 
-  * The Questions Page is where a bank of 8 questions on music are compiled and rendered.
+  * The Recipes Page is where the most recent recipes have been posted up by registered users.
 
-  * Interactive parts come in the form of radio buttons where an answer can be selected, and again, through Back and Submit buttons, allowing a user to return back to the Information or Start page or submit an answer to the quiz.
+  * Recipes appear as cards, which can be clicked on to render more information about each recipe posted up.
+
+  * The cards indicate what type of recipe it is and which user posted it.
 
   <br>
 
-  ![Recipes Page](static/images/quiz-page.png)
+  ![Recipes Page](static/images/recentrecipes.png)
+  ![Recipes Page](static/images/recipemobile.png)
 
   <br><br>
 
   # Testing
 
-  * The project was tested rigorously in a responsive manner, particularly for rendering on smaller and mobile devices. Devices used were: Mobile (Xiaomi Mi 10, 6"), Tablet (Samsung, 7.5" & iPad Air, 8"), Laptop (MacBook Air, 13"). 
+  * As a site administrator site content can be managed easily, with the ability to create, edit and delete user posts and comments.
 
-  * The site was tested on different browsers, Chrome, Safari and Firefox.
+  * This was tested by accessing the Django Admin Panel where all CRUD functionalities can be performed.
+
+  * Likes and Comments features all worked as expected.
+
+  * As a user it is possible to register, log-in and be interative with the site.
+
+  * As a user it is possible to sign out after using the site.
+
+
+  <br>
+
+  ![Image of Django Admin](static/images/djangoadmin.png)
+  <br>
+  ![Image of Likes and Comments](static/images/likeandcommen.png)
+  <br>
+  ![Image of Comments](static/images/comments.png)
+  <br>
+  ![Image of Signing Out](static/images/signingout.png)
+  <br>
+  ![Image of Registration](static/images/signingup.png)
+  <br>
+  ![Image of Login/Out Status](static/images/loginlogout.png)
+
 
   <br>
 
   # Responsiveness
-
-  ![Image of Music Quiz](assets/images/responsive-design.png)
 
   <br>
 
@@ -160,45 +189,24 @@ The Home page of the blog is the primary source that reflects a strong and appea
 
   # Validation
 
-  * No errors were recorded when entered into the official W3C Validator for HTML.
-
-  <br>
-
-  ![Image of HTML Validator](assets/images/html-valid.png)
-
   * No errors were recorded when entered into the official W3C Validator for CSS.
 
   <br>
 
-  ![Image of CSS Validator](assets/images/css-valid.png)
-
-  * No errors were recorded when entered into JSHint.
+  ![Image of CSS Validator](static/images/cssvalid.png)
 
   <br>
 
-  ![Image of JavaScript Validator](assets/images/js-valid.png)
 
-  <br><br>
+  <br>
 
-  # Web Developer Tools
   
-  <br>
-  
-  ## Lighthouse
-
-  <br>
-
-   ![Image of Lighthouse Results](assets/images/lighthouse.png)
-
-   <br>
 
   # Future Features
 
-  * Create the option for individual users to edit or delete their recipes.
+  * Create the option where users receive notifications when comments are posted on their recipes.
 
-  * Include a feature that.
-
-  * 
+  * Include a feature that categorises the types of cuisines posted up on the website.
 
   <br><br>
 
@@ -208,9 +216,7 @@ The Home page of the blog is the primary source that reflects a strong and appea
 
   * I encountered a few issues where the site didn't meet my intended expectations. This primarily resided in the arena of responsiveness when viewing the screen at mobile level. The Summernote default widget form was difficult to  didn't render seamlessly in a landscape view. A fix for this was to dispense with static height and width properties that were yielding limitations when added to the body.
 
-  * 
-
-  * 
+  * Deployment to Heroku proved to be erratic, as a lot of the data didn't render as expected when deployed on various different occasions. This may have been issues relating to the migration process, whether is was something overlooked at the time of deployment or some issues with the server.
 
   <br><br>
 
@@ -222,34 +228,45 @@ The Home page of the blog is the primary source that reflects a strong and appea
 
   <br><br>
 
+  # Technologies and Languages Used
+
+  * HTML
+  * CSS
+  * JavaScript
+  * Python
+
+  * [GitHub](https://github.com/)
+  * [Heroku](https://id.heroku.com)
+  * [Django](https://www.djangoproject.com/)
+  * [Bootstrap](https://getbootstrap.com/)
+  * [Summernote](https://summernote.org/)
+  * [Cloudinary](https://cloudinary.com/)
+
+  <br>
+
+  The content and media used during the project was sourced and referenced as follows:
+
+  * Responsive Aid [AmIResponsive](http://ami.responsivedesign.is/)
+  * Social Media Icons [Font Awesome](https://fontawesome.com/)
+  * Fonts [Google Fonts](https://fonts.google.com/)
+
+  <br><br>
+
   # Deployment
 
   <br>
 
   * The website was deployed to GitHub Pages in the following manner:
 
-    * From the project's [Repository](https://github.com/Th3ThirdMan/music-quiz) go to Settings:
+    * From the project's [Repository](https://github.com/Th3ThirdMan/CleanProject) go to Settings:
     * Scroll down to GitHub Pages
     * Select Branch, Main & Save.
     * A message will indicate that the project has been successfully deployed here and a live link is available.
 
     <br>
 
-    You can find the live site here: [Music Quiz](https://th3thirdman.github.io/music-quiz/)
+    You can find the live site here: [CleanandLean2022](https://cleanproject2022.herokuapp.com/)
 
     <br><br>
-
-    ## Content & Media
-
-    <br>
-
-    The content and media used during the project was sourced and referenced as follows:
-
-    <br>
-
-     * Knowledge Base [W3Schools](https://www.w3schools.com/)
-     * Responsive Aid [AmIResponsive](http://ami.responsivedesign.is/)
-     * Social Media Icons [Font Awesome](https://fontawesome.com/)
-     * Fonts [Google Fonts](https://fonts.google.com/
 
 

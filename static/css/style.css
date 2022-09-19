@@ -76,7 +76,6 @@ p.display-5 {
     color: black;
     font-family: Lato, sans-serif;
     font-size: 14px;
-    position: center;
 }
 
 .card-title {
@@ -150,20 +149,6 @@ p.display-5 {
 .masthead-image {
     position: relative;
     overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #bfd0e1;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
 }
 
 .post-link {
