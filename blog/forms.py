@@ -20,6 +20,7 @@ class RecipeForm(forms.ModelForm):
         model = Post
         fields = ('title', 'description', 'ingredients', 'preparation')
 
+    # unused SummernoteWidget due to mobile alignment issues.
         # widgets = {
         #     'description': SummernoteWidget(),
         #     'ingredients': SummernoteWidget(),

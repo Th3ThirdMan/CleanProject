@@ -1,108 +1,248 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Clean and Lean Blog
 
-Welcome Th3ThirdMan,
+This is a full-stack project employing the programming and framework tools Django, Bootstrap, Python, HTML and CSS. The primary goals of the project were to provide a fully functioning and responsive website allowing users the ability to post up recipes, comment on recipes and also provide the option for users to like or unlike recipes.
+<br><br>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Site Overview
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The Clean and Lean Blog is a site created with the intention of providing information on exciting recipes and also offering the user an opportunity to post up their own recipe ideas that they would like to share with other enthusiasts. The resource is created for those who enjoy cooking. It is designed to give a user a degree of knowledge and inspiration when it comes to all things culinary.
+<br><br>
 
-## Gitpod Reminders
+It is a website designed to be interacted with by people of all ages who have a keen interest in food and its use serves to provide a fun and interesting experience for those passionate about this artform.
+<br><br>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The Home page of the blog is the primary source that reflects a strong and appealing visual of what the website is all about. The opening title highlights a relationship to the content and allows a user to create an account to allow them access to post up their own recipes.
 
-`python3 -m http.server`
+The Home page gives a user the option to sign up to view and post up receipes or alternatively, sign in should they be a previously registered user on the site.
+<br><br>
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+![Image of Clean and Lean Blog](/static/images/cleanandlean.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<br>
 
-A blue button should appear to click: _Make Public_,
+# Planning Stage
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+## Identifying a Target Audience
+<br>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* People who enjoy cooking.
 
-To log into the Heroku toolbelt CLI:
+* People who are interested in posting up their recipes, engaging with other users and those who are interested in imparting their own food wisdom on the website.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* People who have a keen interest in the culinary process and finding out a little bit more about how other food enthusiasts put their recipes together.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+<br><br>
 
-------
+# User Stories
+<br>
 
-## Release History
+## First-time Visitors
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Users should want to have immediate information on the subject matter of the website.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* The site should have the ability to be easily navigable for visitors to get started in viewing and posting up recipes.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* The site should provide inspiration for a visitor who is interested in all things related to food.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<br>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Returning Visitors
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* For returning visitors it would be good to have more recipes available for those users to try out.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Admin
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* As a site administrator it is possible to create, edit, and delete recipes and comments on the blog.
+* As a site administrator it is possible to moderate what comments are allowed on the website.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<br>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<br>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+# Design
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+<br>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Colour Schemes
 
-------
+<br>
 
-## FAQ about the uptime script
+* For the colour schema of the website I initially drew from a personal aesthetic that I felt could work well as a quiz. I mixed and matched colours that I felt coincided well off the palette but as the project was partially based on a theme I decided to go with colours that complimented the thematic background image. To mirror the retro colourway of the other elements on the site I used Pixlr to grab the original logo colours. This worked well and gave the quiz a more vibrant and fun feel, which is the desired effect of a quiz endeavour. The primary trio of colours were as follows: #fcff4a, #4f61d5, #61b03f.
 
-**Why have you added this script?**
+* In addition to the 3 colours dedicated to the entirety of the quiz pages a rgb(253, 246, 180) was utilised as a background colour in the quiz section. A white background did initially suffice here but I felt it needed more refining. This colour worked better when dropped behind the yellow quiz box.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* Hover options on buttons employed the primary colours set for the project, specifically matched to the NTWICM logo.
 
-**How will this affect me?**
+<br>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Font Families
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<br>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Font Families included Lato and sans serif. It added a clarity and refinedness that the pages deserved. 
 
-**So….?**
+<br><br>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+# Features
 
-**Can I opt out?**
+<br>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## The Home Page
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+<br>
 
-**Anything more?**
+  * The Home Page consists of the Clean and Lean brand name logo set as a background with a simple box outlining the nature of the site, how many questions are to be answered, and the means to progress on through to the quiz. 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+  * An opacity element was integrated into the inner box feature allowing more transparency to view the background.
 
----
+  <br>
 
-Happy coding!
+  ![Home Page](static/images/homepage.png) 
+
+  <br>
+
+  ## The Information Page
+
+  <br>
+
+  * The Home Page consists of the primary details and information on how to register to post up receipes.
+
+  * 
+
+  <br>
+
+  ![Information Page](assets/images/information-page.png)
+
+  <br>
+
+  ## The Questions Page
+
+  <br>
+
+  * The Questions Page is where a bank of 8 questions on music are compiled and rendered.
+
+  * Interactive parts come in the form of radio buttons where an answer can be selected, and again, through Back and Submit buttons, allowing a user to return back to the Information or Start page or submit an answer to the quiz.
+
+  <br>
+
+  ![Quiz Page](assets/images/quiz-page.png)
+
+  <br><br>
+
+  # Testing
+
+  * The project was tested rigorously in a responsive manner, particularly for rendering on smaller and mobile devices. Devices used were: Mobile (Xiaomi Mi 10, 6"), Tablet (Samsung, 7.5" & iPad Air, 8"), Laptop (MacBook Air, 13"). 
+
+  * The site was tested on different browsers, Chrome, Safari and Firefox.
+
+  <br>
+
+  # Responsiveness
+
+  ![Image of Music Quiz](assets/images/responsive-design.png)
+
+  <br>
+
+  * The responsiveness of the site was ran through [Responsive Design Checker](https://responsivedesignchecker.com/) and rendered well on all mobile devices during testing.
+
+  <br>
+
+  # Validation
+
+  * No errors were recorded when entered into the official W3C Validator for HTML.
+
+  <br>
+
+  ![Image of HTML Validator](assets/images/html-valid.png)
+
+  * No errors were recorded when entered into the official W3C Validator for CSS.
+
+  <br>
+
+  ![Image of CSS Validator](assets/images/css-valid.png)
+
+  * No errors were recorded when entered into JSHint.
+
+  <br>
+
+  ![Image of JavaScript Validator](assets/images/js-valid.png)
+
+  <br><br>
+
+  # Web Developer Tools
+  
+  <br>
+  
+  ## Lighthouse
+
+  <br>
+
+   ![Image of Lighthouse Results](assets/images/lighthouse.png)
+
+   <br>
+
+  # Future Features
+
+  * Create the option for individual users to edit or delete their recipes.
+
+  * Include a feature that.
+
+  * 
+
+  <br><br>
+
+  # Bugs
+
+  <br>
+
+  * I encountered a few issues where the site didn't meet my intended expectations. This primarily resided in the arena of responsiveness when viewing the screen at mobile level. The Summernote default widget form was difficult to  didn't render seamlessly in a landscape view. A fix for this was to dispense with static height and width properties that were yielding limitations when added to the body.
+
+  * 
+
+  * 
+
+  <br><br>
+
+  # Unfixed Bugs
+
+  <br>
+
+  * There were no unfixed bugs.
+
+  <br><br>
+
+  # Deployment
+
+  <br>
+
+  * The website was deployed to GitHub Pages in the following manner:
+
+    * From the project's [Repository](https://github.com/Th3ThirdMan/music-quiz) go to Settings:
+    * Scroll down to GitHub Pages
+    * Select Branch, Main & Save.
+    * A message will indicate that the project has been successfully deployed here and a live link is available.
+
+    <br>
+
+    You can find the live site here: [Music Quiz](https://th3thirdman.github.io/music-quiz/)
+
+    <br><br>
+
+    ## Content & Media
+
+    <br>
+
+    The content and media used during the project was sourced and referenced as follows:
+
+    <br>
+
+     * Knowledge Base [W3Schools](https://www.w3schools.com/)
+     * Responsive Aid [AmIResponsive](http://ami.responsivedesign.is/)
+     * Social Media Icons [Font Awesome](https://fontawesome.com/)
+     * Fonts [Google Fonts](https://fonts.google.com/
+
+
