@@ -11,9 +11,7 @@ The Clean and Lean Blog is a site created with the intention of providing inform
 It is a website designed to be interacted with by people of all ages who have a keen interest in food and its use serves to provide a fun and interesting experience for those passionate about this artform.
 <br><br>
 
-The Home page of the blog is the primary source that reflects a strong and appealing visual of what the website is all about. The opening title highlights a relationship to the content and allows a user to create an account to allow them access to post up their own recipes.
-
-The Home page gives a user the option to sign up to view and post up receipes or alternatively, sign in should they be a previously registered user on the site.
+The Home page of the blog is the primary source that reflects a strong and appealing visual of what the website is all about. The opening title highlights a relationship to the content and allows a user to create an account to allow them access to post up their own recipes. The Home page also gives a user the option to sign in should they be a previously registered user on the site.
 <br><br>
 
 
@@ -53,6 +51,8 @@ The Home page gives a user the option to sign up to view and post up receipes or
 
 * For returning visitors it would be good to have more recipes available for those users to try out.
 
+<br>
+
 ## Admin
 
 * As a site administrator it is possible to create, edit, and delete recipes and comments on the blog.
@@ -60,6 +60,13 @@ The Home page gives a user the option to sign up to view and post up receipes or
 
 
 <br>
+
+## User
+
+* As a user it is possible to create an account, log in and out of that account.
+* As a user it is possible to post up recipes after registering an account.
+* As a user it is possible to comment on posted recipes.
+* As a user it is possible to like or unlike recipes.
 
 <br>
 
@@ -71,11 +78,11 @@ The Home page gives a user the option to sign up to view and post up receipes or
 
 <br>
 
-* For the colour schema of the website I initially drew from a personal aesthetic that I felt could work well as a quiz. I mixed and matched colours that I felt coincided well off the palette but as the project was partially based on a theme I decided to go with colours that complimented the thematic background image. To mirror the retro colourway of the other elements on the site I used Pixlr to grab the original logo colours. This worked well and gave the quiz a more vibrant and fun feel, which is the desired effect of a quiz endeavour. The primary trio of colours were as follows: #fcff4a, #4f61d5, #61b03f.
+* For the colour schema of the website I wanted to introduce a rich and rustic surround to the site. The landing page image was indicative of how I perceived the whole project concept, warm and inviting, to tie in accurately with the recipes offered in the site. 
 
-* In addition to the 3 colours dedicated to the entirety of the quiz pages a rgb(253, 246, 180) was utilised as a background colour in the quiz section. A white background did initially suffice here but I felt it needed more refining. This colour worked better when dropped behind the yellow quiz box.
+* As the website landing page image is a notable feature on first viewing it didn't need too much of a remove when deciding appropriate colours to co-incide with the visual of the website. Button colours and the Brand lettering worked well with rgb(255, 165, 0). For the card recipes this was offset subtly with rgb(251, 241, 222), giving not much in the way of a large remove on subsequent pages.
 
-* Hover options on buttons employed the primary colours set for the project, specifically matched to the NTWICM logo.
+* Hover options on buttons employed slight contrasts to original button colours.
 
 <br>
 
@@ -83,7 +90,7 @@ The Home page gives a user the option to sign up to view and post up receipes or
 
 <br>
 
-* Font Families included Lato and sans serif. It added a clarity and refinedness that the pages deserved. 
+* Font Families included Lato, Roboto and Sans Serif. It added a clarity and refinedness that the pages deserved. 
 
 <br><br>
 
@@ -91,11 +98,11 @@ The Home page gives a user the option to sign up to view and post up receipes or
 
 <br>
 
-## The Home Page
+## The Home and Registration Page
 
 <br>
 
-  * The Home Page consists of the Clean and Lean brand name logo set as a background with a simple box outlining the nature of the site, how many questions are to be answered, and the means to progress on through to the quiz. 
+  * The Home Page consists of the Clean and Lean brand name logo 
 
   * An opacity element was integrated into the inner box feature allowing more transparency to view the background.
 
@@ -105,7 +112,7 @@ The Home page gives a user the option to sign up to view and post up receipes or
 
   <br>
 
-  ## The Information Page
+  ## The Login Page
 
   <br>
 
@@ -115,11 +122,11 @@ The Home page gives a user the option to sign up to view and post up receipes or
 
   <br>
 
-  ![Information Page](assets/images/information-page.png)
+  ![Login Page](static/images/loginpage.png)
 
   <br>
 
-  ## The Questions Page
+  ## The Recipes Page
 
   <br>
 
@@ -129,7 +136,7 @@ The Home page gives a user the option to sign up to view and post up receipes or
 
   <br>
 
-  ![Quiz Page](assets/images/quiz-page.png)
+  ![Recipes Page](static/images/quiz-page.png)
 
   <br><br>
 
